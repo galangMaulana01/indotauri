@@ -1,0 +1,19 @@
+[package]
+name = "indoscores"
+version = "0.1.0"
+description = "A Tauri App"
+authors = ["galangMaulana01"]
+edition = "2021"
+rust-version = "1.77.2"
+
+[lib]
+name = "indoscores_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = "2.0.0-rc"
+
+[dependencies]
+tauri = { version = "2.0.0-rc", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
